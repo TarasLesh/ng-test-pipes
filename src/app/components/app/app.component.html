@@ -1,0 +1,16 @@
+<h2>app is working</h2>
+
+<button (click)="toggleClass()" [ngStyle]="{backgroundColor: colorRed}" >red</button>
+
+<div [ngClass]="{target: myClass}" *ngIf="myClass">
+  <a routerLink="">main menu</a>
+  <br>
+  <a routerLink="greeting">greeting</a>
+</div>
+
+<h1 appGreen>
+  {{'samsung' | size : 'upper'}}
+</h1>
+
+<router-outlet></router-outlet>
+
