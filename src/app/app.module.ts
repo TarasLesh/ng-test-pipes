@@ -9,6 +9,8 @@ import { OlaComponent } from './components/ola/ola.component';
 import { StartComponent } from './components/start/start.component';
 import { SizePipe } from './size.pipe';
 import { GreenDirective } from './green.directive';
+import { FilterPipe } from './components/app/filter.pipe';
+import { RendomColorDirective } from './components/app/rendom-color.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { GreenDirective } from './green.directive';
     OlaComponent,
     StartComponent,
     SizePipe,
-    GreenDirective
+    GreenDirective,
+    FilterPipe,
+    RendomColorDirective
   ],
   imports: [
     BrowserModule,

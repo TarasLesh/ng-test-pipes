@@ -14,3 +14,11 @@
 
 <router-outlet></router-outlet>
 
+<div appRendomColor *ngFor="let user of users | filter : 'age': 30 ">
+  <div>{{user.name}}</div>
+  <div>{{user.age}}</div>
+  <div>{{user.status}}</div>
+  <hr>
+</div>
+
+
